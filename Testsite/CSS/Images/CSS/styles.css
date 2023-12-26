@@ -115,7 +115,7 @@ nav a:hover {
 .stats-image-hd {
     width: 40%;
     height: 7%;
-    position: ;
+  
     left: 23%
 }
 
@@ -157,6 +157,7 @@ nav a:hover {
 #grid-item-two {
  
     grid-column: span 6;
+    grid-row: 2;
     margin-top: -100%;
     align-self: center;
     justify-content: center;
@@ -205,10 +206,23 @@ nav a:hover {
     margin-top: -590%;
     margin-bottom: 200%;
     grid-column: span 1;
-    grid-row: span 2;
-    grid-row-start:  3;
+    grid-row:3;
+  
 }
+
+#grid-item-stats-menu {
+    margin-top: -300%;
+    margin-bottom: 200%;
+    grid-column: span 1;
+    grid-row: 4;
+    grid-row: span 1;
     
+}
+
+
+
+  
+
 #grid-item-three {
     grid-column: span 3;
     padding: 40px;
@@ -221,8 +235,10 @@ nav a:hover {
 
 #grid-item-four {
     
+    
     grid-column: span 6;
-
+    grid-row: 3;
+    margin-top: -100%;
     margin-top: -160%;
     align-self: center;
     justify-content: center;
@@ -247,7 +263,7 @@ nav a:hover {
 
     #grid-item-six {
         grid-column: span 6;
-        margin-top: -148%;
+        margin-top: -100%;
        
          align-self: center;
         justify-content: center;
@@ -257,7 +273,7 @@ nav a:hover {
     
     #grid-item-seven {
         grid-column: span 3;
-        margin-top: -339%;
+        margin-top: -220%;
         padding: 40px;
         align-self: center;
         justify-content: center;
@@ -266,10 +282,12 @@ nav a:hover {
     }
 
     #grid-item-stats-worst {
-        margin-top: -590%;
+        
+        margin-top: -500%;
         margin-bottom: 200%;
         grid-column: span 1;
-              
+        grid-row: 5;
+        grid-row: span 1;
     }
 
     #grid-item-eight {
@@ -323,7 +341,8 @@ nav a:hover {
         #grid-item-links {
             grid-column-start: 2; /* Starting point of the element within the grid */
             grid-column-end: span 6;
-            grid-row: span;
+            grid-row: span 1;
+           
             padding: 40px;
         margin-top: 10%;
         background-color: rgba(33, 119, 125, 0.041);
