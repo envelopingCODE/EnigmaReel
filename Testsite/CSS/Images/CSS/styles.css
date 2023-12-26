@@ -99,12 +99,11 @@ nav a:hover {
  
 
 #arrow-image {
-    width: 3%;
+    width: 20%;
     height: 10%;
-    position: absolute;
-       left: 66%;
-    top: 50%;
-    transform: rotate(267deg);
+    right: 1%;
+    position: relative;
+     transform: rotate(267deg);
     
 }
 
