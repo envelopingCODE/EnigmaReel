@@ -1,0 +1,406 @@
+body {
+    background-color :hsl(210, 70%, 9%) ;
+    color:  rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+    padding: 8px;
+    margin: 25px;
+
+    
+    
+}
+
+
+    p {
+        padding: 8px;
+        margin: 25px;
+        }
+
+.stats {
+    font-size: 0.8em;
+    color: rgba(127, 255, 212, 0.53);
+    padding: 8px;
+    margin: 25px;
+    
+}
+
+#landing {
+
+    color: rgb(0, 255, 200);
+}
+
+.green {
+    color: rgb(0, 255, 200);
+}
+
+#Hello {color:rgb(56, 147, 175) ;}
+
+#m1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #000000;
+    padding: 8px;
+    margin: 25px;
+  
+}
+
+
+.Container {
+    background-color: hsl(210, 70%, 9%) ;
+    width: 100%;
+    opacity: 100%;
+    max-width: 1170px;
+    margin: auto
+    
+}
+
+.full-width {
+    width: 100%;
+}
+
+nav ul {
+    padding:0%;
+    margin:0%;
+    list-style:none
+
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(0, 255, 200);
+    padding: 10px;
+    color:rgb(0, 0, 0) 
+}
+
+nav a:hover {
+    background-color: rgb(0, 183, 255);
+}
+
+@media screen and (max-width: 700px) {
+    nav li{display:block; }
+    nav a {display:block;
+    text-align: center;
+    margin-bottom: 5px;}
+    }
+
+#noJS {
+    color: rgba(26, 132, 173, 0.747);
+    padding: 8px;
+    margin: 25px;
+   
+ }
+
+
+ 
+
+#arrow-image {
+    width: 3%;
+    height: 10%;
+    position: absolute;
+       left: 66%;
+    top: 50%;
+    transform: rotate(267deg);
+    
+}
+
+#cinema-image {
+    width: 14%;
+    height: 14%;
+}
+
+.stats-image-hd {
+    width: 40%;
+    height: 7%;
+    position: ;
+    left: 23%
+}
+
+/* setting up main grid properties */
+
+#landing-grid {
+    display: grid;
+    max-width: 1270px;
+     grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr;
+       gap: 5%; /* added gap between grid items */
+       row-gap: 20%;
+    
+}
+
+/* setting up grid styling for each grid item: */
+
+#grid-item-one {
+    grid-column: span 5;
+    grid-row: auto;
+     background-color: rgba(33, 119, 125, 0.041);
+     align-self: center;
+     justify-content: center;
+     text-align-last: center;
+}
+
+
+
+#grid-item-example {
+    grid-column: span 4;
+  
+    
+    align-self: center;
+    justify-content: center;
+    text-align-last: center;
+    background-color: rgba(33, 119, 125, 0.041);
+}
+
+#grid-item-two {
+ 
+    grid-column: span 6;
+    margin-top: -100%;
+    align-self: center;
+    justify-content: center;
+    text-align-last: center;
+    background-color: rgba(33, 119, 125, 0.041);
+}
+
+
+.grid-item-info {
+    display: none;
+    grid-column: span 3;
+    
+    padding: 40px;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    text-align-last: center;
+    background-color: rgba(33, 119, 125, 0.041);
+}
+
+.grid-item-stats {
+   
+    text-align: center;  
+     justify-content: center;
+    background-color: rgba(33, 119, 125, 0.041);
+}
+
+#grid-item-stats-landing {
+   
+    grid-column: span 1;
+    grid-row: 1;
+}
+
+#grid-item-stats-frances {
+
+    grid-column: span 1;
+    grid-row: 2;
+    
+    margin-top: -200%;
+    margin-bottom: 300%;
+    
+}
+
+
+#grid-item-stats-coffee {
+    margin-top: -590%;
+    margin-bottom: 200%;
+    grid-column: span 1;
+    grid-row: span 2;
+    grid-row-start:  3;
+}
+    
+#grid-item-three {
+    grid-column: span 3;
+    padding: 40px;
+    margin-top: -210%;
+    align-self: center;
+    justify-content: center;
+    text-align-last: center;
+    background-color: rgba(33, 119, 125, 0.041);
+}
+
+#grid-item-four {
+    
+    grid-column: span 6;
+
+    margin-top: -160%;
+    align-self: center;
+    justify-content: center;
+    text-align-last: center;
+    background-color: rgba(33, 119, 125, 0.041);
+
+    }
+
+    #grid-item-five {
+        grid-column: span 3;
+        margin-top: -339%;
+        padding: 40px;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(33, 119, 125, 0.041);
+    
+    }
+
+   
+
+
+    #grid-item-six {
+        grid-column: span 6;
+        margin-top: -148%;
+       
+         align-self: center;
+        justify-content: center;
+        text-align-last: center;
+        background-color: rgba(33, 119, 125, 0.041);
+    }
+    
+    #grid-item-seven {
+        grid-column: span 3;
+        margin-top: -339%;
+        padding: 40px;
+        align-self: center;
+        justify-content: center;
+        text-align-last: center;
+        background-color: rgba(33, 119, 125, 0.041);
+    }
+
+    #grid-item-stats-worst {
+        margin-top: -590%;
+        margin-bottom: 200%;
+        grid-column: span 1;
+              
+    }
+
+    #grid-item-eight {
+        grid-column: span 6;
+
+        margin-top: -148%;
+        align-self: center;
+        justify-content: center;
+        text-align-last: center;
+        background-color: rgba(33, 119, 125, 0.041);
+    }
+
+    #grid-item-nine {
+        grid-column: span 3;
+        margin-top: -339%;
+        padding: 40px;
+        margin: 30px;
+        align-self: center;
+        justify-content: center;
+        background-color: rgba(33, 119, 125, 0.041);
+    }
+
+    #grid-item-stats-tar {
+
+        grid-column: span 1;
+        margin-top: -20%;
+    }
+
+    #grid-item-ten {
+        grid-column: span 6;
+
+        margin-top: -148%;
+        align-self: center;
+        justify-content: center;
+        text-align-last: center;
+        background-color: rgba(33, 119, 125, 0.041);
+    }
+
+    #grid-item-eleven {
+        grid-column: span 3;
+        margin-top: -339%;
+        padding: 40px;
+        margin: 30px;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(33, 125, 119, 0.041);
+    }
+
+     
+        #grid-item-links {
+            grid-column-start: 2; /* Starting point of the element within the grid */
+            grid-column-end: span 6;
+            grid-row: span;
+            padding: 40px;
+        margin-top: 10%;
+        background-color: rgba(33, 119, 125, 0.041);
+    }
+
+.iframeContainer {
+   
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.movie-container {
+    position: relative;
+    display: inline-block;
+    ;
+}
+
+
+.movie-info {
+    position: absolute;
+    font-weight: bold;
+    top: 80%;
+ 
+     /* Position to the left of the movie title */
+    width: 350px; /* Adjust the width as needed */
+    background: rgba(0, 0, 0, 0.417); /* Semi-transparent background */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#coffee-info {
+    width: 550px;
+}
+
+
+.movie-info-example {
+    position: absolute;
+    font-weight: bold;
+    top: 70%;
+    left: 100%; /* Position to the left of the movie title */
+    width: 300px; /* Adjust the width as needed */
+    background: rgba(0, 0, 0, 0.417); /* Semi-transparent background */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.movie-container:hover .movie-info  {
+    opacity: 1;
+    }
+
+    .movie-info-example {
+        opacity: 1;
+    }
+ 
+
+    .animate-on-mouseover:hover {
+      
+        transform: scale(1.2);
+        transition-duration: 0.4s;
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+    }
+
+    .animate-on-mouseover-trailer:hover {
+      
+        transform: scale(1.2);
+        transition-duration: 1s;
+    }
+
+
