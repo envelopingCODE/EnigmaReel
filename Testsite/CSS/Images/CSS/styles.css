@@ -204,7 +204,7 @@ nav a:hover {
 
 #grid-item-stats-coffee {
     margin-top: -590%;
-    margin-bottom: 200%;
+    margin-bottom: 150%;
     grid-column: span 1;
     grid-row:3;
   
@@ -283,8 +283,7 @@ nav a:hover {
 
     #grid-item-stats-worst {
         
-        margin-top: -500%;
-        margin-bottom: 200%;
+     
         grid-column: span 1;
         grid-row: 5;
         grid-row: span 1;
@@ -293,7 +292,7 @@ nav a:hover {
     #grid-item-trailer-worst {
         grid-column: span 6;
 
-        margin-top: -148%;
+    
         align-self: center;
         justify-content: center;
         text-align-last: center;
@@ -302,7 +301,6 @@ nav a:hover {
 
     #grid-item-name-tile-worst {
         grid-column: span 3;
-        margin-top: -200%;
         padding: 40px;
         margin: 30px;
         align-self: center;
@@ -316,17 +314,16 @@ nav a:hover {
         margin-top: -20%;
     }
 
-    #grid-item-ten {
+    #grid-item-trailer-Tar {
         grid-column: span 6;
-
-        margin-top: -148%;
+      
         align-self: center;
         justify-content: center;
         text-align-last: center;
         background-color: rgba(33, 119, 125, 0.041);
     }
 
-    #grid-item-eleven {
+    #grid-item-name-tile-Tar {
         grid-column: span 3;
         margin-top: -339%;
         padding: 40px;
