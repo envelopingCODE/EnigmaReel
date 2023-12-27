@@ -127,7 +127,7 @@ nav a:hover {
      grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr 1fr;
        gap: 5%; /* added gap between grid items */
-       row-gap: 20%;
+       row-gap: 10%;
     
 }
 
@@ -135,7 +135,7 @@ nav a:hover {
 
 #grid-item-one {
     grid-column: span 5;
-    grid-row: auto;
+    grid-row: span 1;
      background-color: rgba(33, 119, 125, 0.041);
      align-self: center;
      justify-content: center;
@@ -158,7 +158,6 @@ nav a:hover {
  
     grid-column: span 6;
     grid-row: 2;
-    margin-top: -100%;
     align-self: center;
     justify-content: center;
     text-align-last: center;
@@ -169,12 +168,12 @@ nav a:hover {
 .grid-item-info {
     display: none;
     grid-column: span 3;
-    
+    grid-row: span 1;
     padding: 40px;
     position: relative;
     align-self: center;
     justify-content: center;
-    text-align-last: center;
+    text-align: center ;
     background-color: rgba(33, 119, 125, 0.041);
 }
 
@@ -194,25 +193,26 @@ nav a:hover {
 #grid-item-stats-frances {
 
     grid-column: span 1;
-    grid-row: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 60%;
+    margin: auto;
     
-    margin-top: -200%;
-    margin-bottom: 300%;
+ 
     
 }
 
 
 #grid-item-stats-coffee {
-    margin-top: -590%;
-    margin-bottom: 150%;
+
     grid-column: span 1;
-    grid-row:3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   
 }
 
 #grid-item-stats-menu {
-    margin-top: -300%;
-    margin-bottom: 200%;
+    
     grid-column: span 1;
     grid-row: 4;
     grid-row: span 1;
@@ -226,7 +226,6 @@ nav a:hover {
 #grid-item-three {
     grid-column: span 3;
     padding: 40px;
-    margin-top: -210%;
     align-self: center;
     justify-content: center;
     text-align-last: center;
@@ -238,8 +237,7 @@ nav a:hover {
     
     grid-column: span 6;
     grid-row: 3;
-    margin-top: -100%;
-    margin-top: -160%;
+   
     align-self: center;
     justify-content: center;
     text-align-last: center;
@@ -249,7 +247,6 @@ nav a:hover {
 
     #grid-item-five {
         grid-column: span 3;
-        margin-top: -339%;
         padding: 40px;
         align-self: center;
         justify-content: center;
@@ -263,7 +260,6 @@ nav a:hover {
 
     #grid-item-trailer-menu {
         grid-column: span 6;
-        margin-top: -100%;
        
          align-self: center;
         justify-content: center;
@@ -273,7 +269,7 @@ nav a:hover {
     
     #grid-item-seven {
         grid-column: span 3;
-        margin-top: -220%;
+    
         padding: 40px;
         align-self: center;
         justify-content: center;
@@ -311,7 +307,7 @@ nav a:hover {
     #grid-item-stats-tar {
 
         grid-column: span 1;
-        margin-top: -20%;
+ 
     }
 
     #grid-item-trailer-Tar {
@@ -325,7 +321,7 @@ nav a:hover {
 
     #grid-item-name-tile-Tar {
         grid-column: span 3;
-        margin-top: -339%;
+ 
         padding: 40px;
         margin: 30px;
         align-self: center;
