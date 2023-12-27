@@ -154,7 +154,7 @@ nav a:hover {
     background-color: rgba(33, 119, 125, 0.041);
 }
 
-#grid-item-two {
+#grid-item-trailer-frances {
  
     grid-column: span 6;
     grid-row: 2;
@@ -233,7 +233,7 @@ nav a:hover {
     background-color: rgba(33, 119, 125, 0.041);
 }
 
-#grid-item-four {
+#grid-item-trailer-coffee {
     
     
     grid-column: span 6;
@@ -261,7 +261,7 @@ nav a:hover {
    
 
 
-    #grid-item-six {
+    #grid-item-trailer-menu {
         grid-column: span 6;
         margin-top: -100%;
        
@@ -290,7 +290,7 @@ nav a:hover {
         grid-row: span 1;
     }
 
-    #grid-item-eight {
+    #grid-item-trailer-worst {
         grid-column: span 6;
 
         margin-top: -148%;
@@ -300,9 +300,9 @@ nav a:hover {
         background-color: rgba(33, 119, 125, 0.041);
     }
 
-    #grid-item-nine {
+    #grid-item-name-tile-worst {
         grid-column: span 3;
-        margin-top: -339%;
+        margin-top: -200%;
         padding: 40px;
         margin: 30px;
         align-self: center;
