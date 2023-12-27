@@ -125,7 +125,7 @@ nav a:hover {
     display: grid;
     max-width: 1270px;
      grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
        gap: 5%; /* added gap between grid items */
        row-gap: 10%;
     
@@ -178,7 +178,7 @@ nav a:hover {
 }
 
 .grid-item-stats {
-   
+
     text-align: center;  
      justify-content: center;
     background-color: rgba(33, 119, 125, 0.041);
@@ -195,12 +195,13 @@ nav a:hover {
     grid-column: span 1;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 60%;
     margin: auto;
-    
+    padding-bottom: 30%;
+  
  
-    
 }
+
+
 
 
 #grid-item-stats-coffee {
@@ -208,7 +209,8 @@ nav a:hover {
     grid-column: span 1;
     grid-row-start: 3;
     grid-row-end: 4;
-  
+    margin: auto;
+    padding-bottom: 30%;
 }
 
 #grid-item-stats-menu {
@@ -216,14 +218,15 @@ nav a:hover {
     grid-column: span 1;
     grid-row: 4;
     grid-row: span 1;
-    
+    margin: auto;
+    padding-bottom: 30%;
 }
 
 
 
   
 
-#grid-item-three {
+#grid-item-name-tile-frances {
     grid-column: span 3;
     padding: 40px;
     align-self: center;
@@ -245,7 +248,7 @@ nav a:hover {
 
     }
 
-    #grid-item-five {
+    #grid-item-name-tile-coffee {
         grid-column: span 3;
         padding: 40px;
         align-self: center;
@@ -267,7 +270,7 @@ nav a:hover {
         background-color: rgba(33, 119, 125, 0.041);
     }
     
-    #grid-item-seven {
+    #grid-item-name-tile-menu {
         grid-column: span 3;
     
         padding: 40px;
