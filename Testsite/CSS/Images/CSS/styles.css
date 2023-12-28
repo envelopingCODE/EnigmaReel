@@ -226,7 +226,7 @@ nav a:hover {
     align-self: center;
     justify-content: center;
     text-align-last: center;
-    background-color: rgba(33, 119, 125, 0.041);
+    background-color:  rgba(33, 119, 125, 0.041);
 }
 
 
@@ -264,7 +264,7 @@ nav a:hover {
     grid-row-end: 3;
     margin: auto;
     padding-bottom: 30%;
-  
+    background-color:  rgba(3, 12, 12, 0.124);
  
 }
 
@@ -278,6 +278,8 @@ nav a:hover {
     grid-row-end: 4;
     margin: auto;
     padding-bottom: 30%;
+    background-color:  rgba(3, 12, 12, 0.124);
+ 
 }
 
 #grid-item-stats-menu {
@@ -287,6 +289,8 @@ nav a:hover {
     grid-row: span 1;
     margin: auto;
     padding-bottom: 30%;
+    background-color:  rgba(3, 12, 12, 0.124);
+ 
 }
 
 
@@ -311,7 +315,7 @@ nav a:hover {
     align-self: center;
     justify-content: center;
     text-align-last: center;
-    background-color: rgba(33, 119, 125, 0.041);
+    background-color:  rgba(33, 119, 125, 0.041);
 
     }
 
@@ -334,7 +338,7 @@ nav a:hover {
          align-self: center;
         justify-content: center;
         text-align-last: center;
-        background-color: rgba(33, 119, 125, 0.041);
+        background-color:  rgba(33, 119, 125, 0.041);
     }
     
     #grid-item-name-tile-menu {
@@ -353,6 +357,7 @@ nav a:hover {
         grid-column: span 1;
         grid-row: 5;
         grid-row: span 1;
+        background: linear-gradient(to right, rgba(3, 12, 12, 0.124), transparent);
     }
 
     #grid-item-trailer-worst {
@@ -362,7 +367,7 @@ nav a:hover {
         align-self: center;
         justify-content: center;
         text-align-last: center;
-        background-color: rgba(3, 12, 12, 0.124);
+        background-color: rgba(33, 119, 125, 0.041);
     }
 
     #grid-item-name-tile-worst {
