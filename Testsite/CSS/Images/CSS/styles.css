@@ -147,6 +147,41 @@ nav a:hover {
     left: 23%
 }
 
+
+ 
+  
+  .fill p {
+    margin: 0;
+    color: #fff; /* Set the text color */
+    font-weight: bold;
+    text-align: center;
+    width: 100%; /* Make the text fill the entire width */
+  }
+  
+.rating-bar {
+    position:relative;
+    left: 30px;
+    align-items: center;
+    width: 90%; /* Set the width of the rating bar */
+    height: 50px; /* Set the height of the rating bar */
+    background-color: #eeeeee7b; /* Set the background color of the rating bar */
+  }
+  
+  .fill {
+    height: 100%;
+    background-color:rgb(0, 255, 200); /* Set the fill color of the rating bar */
+    transition: width 0.5s ease; /* Add a transition for a smooth effect */
+       display: flex;
+    align-items: center;
+  }
+
+  /* .stats-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  } */
+
 /* setting up main grid properties */
 
 #landing-grid {
@@ -390,15 +425,27 @@ nav a:hover {
     position: absolute;
     font-weight: bold;
     top: 80%;
- 
-     /* Position to the left of the movie title */
-    width: 350px; /* Adjust the width as needed */
+     width: 350px; 
     background: rgba(0, 0, 0, 0.417); /* Semi-transparent background */
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.movie-info-rating {
+   
+    position: absolute;
+    bottom: +106%;
+    font-weight: bold;
+     width: 92%; 
+    background: rgba(0, 0, 0, 0.417); /* Semi-transparent background */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+   
 }
 
 #coffee-info {
@@ -427,6 +474,10 @@ nav a:hover {
     }
 
     .movie-info-example {
+        opacity: 1;
+    }
+
+    .movie-info-rating:hover {
         opacity: 1;
     }
  
