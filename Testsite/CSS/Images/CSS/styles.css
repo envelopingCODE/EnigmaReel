@@ -199,7 +199,8 @@ nav a:hover {
 #grid-item-one {
     grid-column: span 5;
     grid-row: span 1;
-     background-color: rgba(33, 119, 125, 0.041);
+  \
+
      align-self: center;
      justify-content: center;
      text-align-last: center;
@@ -214,7 +215,8 @@ nav a:hover {
     align-self: center;
     justify-content: center;
     text-align-last: center;
-    background-color: rgba(33, 119, 125, 0.041);
+    background: linear-gradient(to top, rgba(3, 12, 12, 0.124), transparent);
+
 }
 
 #grid-item-trailer-frances {
@@ -244,13 +246,15 @@ nav a:hover {
 
     text-align: center;  
      justify-content: center;
-    background-color: rgba(33, 119, 125, 0.041);
+    background-color: rgba(3, 12, 12, 0.124);
 }
 
 #grid-item-stats-landing {
    
     grid-column: span 1;
     grid-row: 1;
+    background-color: rgba(3, 12, 12, 0.124);
+ 
 }
 
 #grid-item-stats-frances {
@@ -295,7 +299,7 @@ nav a:hover {
     align-self: center;
     justify-content: center;
     text-align-last: center;
-    background-color: rgba(33, 119, 125, 0.041);
+    background-color: rgba(3, 12, 12, 0.124);
 }
 
 #grid-item-trailer-coffee {
