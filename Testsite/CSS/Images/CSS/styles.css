@@ -172,8 +172,9 @@ nav a:hover {
     position:relative;
     left: 30px;
     align-items: center;
+    justify-content: center;
     width: 90%; /* Set the width of the rating bar */
-    height: 50px; /* Set the height of the rating bar */
+    height: 36px; /* Set the height of the rating bar */
     background-color: #eeeeee7b; /* Set the background color of the rating bar */
   }
   
