@@ -17,6 +17,15 @@ body {
         margin: 25px;
         }
 
+        html   {
+            scroll-snap-type: y proximity;
+        }
+
+        section {
+            height: 100vh;
+            scroll-snap-align: center;
+        }
+
 .stats {
     font-size: 0.8em;
     color: rgba(127, 255, 212, 0.53);
@@ -230,10 +239,26 @@ nav a:hover {
 
 }
 
+
+#grid-item-trailer-settings {
+   
+    grid-column: 1 / span 8;
+ 
+    grid-row: span 1; /* Change this to span only 1 row */
+
+    margin-top: -30%;
+   ;
+    padding-bottom: 3%;
+    background: linear-gradient(to top, rgba(3, 12, 12, 0.124), transparent);
+     align-self: center;
+     justify-content: center;
+     text-align-last: center;
+}
+
 #grid-item-trailer-frances {
  
     grid-column: span 6;
-    grid-row: 2;
+    grid-row: span 1;
     align-self: center;
     justify-content: center;
     text-align-last: center;
@@ -271,8 +296,8 @@ nav a:hover {
 #grid-item-stats-frances {
 
     grid-column: span 1;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+  
     margin: auto;
     padding-bottom: 30%;
     background-color:  rgba(3, 12, 12, 0.124);
@@ -285,8 +310,7 @@ nav a:hover {
 #grid-item-stats-coffee {
 
     grid-column: span 1;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row: span 1;
     margin: auto;
     padding-bottom: 30%;
     background-color:  rgba(3, 12, 12, 0.124);
@@ -296,7 +320,7 @@ nav a:hover {
 #grid-item-stats-menu {
     
     grid-column: span 1;
-    grid-row: 4;
+  
     grid-row: span 1;
     margin: auto;
     padding-bottom: 30%;
@@ -321,7 +345,7 @@ nav a:hover {
     
     
     grid-column: span 6;
-    grid-row: 3;
+    grid-row: span 1;
    
     align-self: center;
     justify-content: center;
@@ -366,7 +390,7 @@ nav a:hover {
         
      
         grid-column: span 1;
-        grid-row: 5;
+       
         grid-row: span 1;
         background-color:  rgba(3, 12, 12, 0.124);
         margin: auto;
@@ -521,6 +545,31 @@ nav a:hover {
       
         transform: scale(1.2);
         transition-duration: 0.6s;
+      
     }
 
 
+    .slider-container {
+ 
+        margin-top: 20px;
+    }
+    
+    label {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+    
+    input[type="range"] {
+        width: 100px;
+        appearance: none;
+        margin: 10px 0;
+        background-color: #ddd;
+        height: 4px;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .trailer {
+        border: none;
+    }
