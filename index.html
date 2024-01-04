@@ -15,7 +15,7 @@
 
     <div class="Container">
 
-        <nav>
+        <nav >
             <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Reviews.html">Reviews</a></li>
@@ -24,15 +24,17 @@
         </nav> 
     
 
-        <img src="pexels_ERT.jpg" alt="Closeup banner of a person in a leather jacket holding a popcorn container and 3d movie glasses" class="full-width">
+        <img id="image-snap" src="pexels_ERT.jpg" alt="Closeup banner of a person in a leather jacket holding a popcorn container and 3d movie glasses" class="full-width">
 
         <noscript id="noJS"> <h1> You have JS disabled - that's a great security move. <br>This site is fully operational without it! <br> You can enable JS if you want trailer playback </h1></noscript>
       
         <div id="progress-bar"></div>
     
+        <div id="scroll-container">
+
 <div id="landing-grid">
 
- <div id="grid-item-one" >
+ <div id="grid-item-one" class="grid-item-snap" >
        
     <h1 id="m1">  <strong>The Reel</strong> </h1>     
         <p id="Hello"> <strong>Hello world</strong>  </p>           
@@ -53,6 +55,18 @@
          <p class="stats"> 12.24.23 <br> | New Reviews <br> are up! 
             
           </p>
+
+          <br><br>
+          <br><br>
+          <br><br>
+          <label for="scrollModeSlider">Scroll Mode</label>
+<input type="range" id="scrollModeSlider" min="0" max="1" step="1" value="0">
+<span id="scrollModeText">Snap Scroll</span>
+          <br><br>
+             <p>Trailer settings:</p>
+            <label for="sourceSlider">Invidious</label>
+            <input type="range" id="sourceSlider" min="0" max="1" step="1" value="0" oninput="changeVideoSource()">
+            <label for="sourceSlider">YouTube </label>
                  
         </div> 
         
@@ -63,7 +77,7 @@
         <div id="movie-container">
           
             <h1> Movie Titles</h1>
-        <p class="green"> <strong>  if you hover on me I will reveal something </strong></p>
+        <p class="green"> <strong>  if you hover on me I will <br>reveal something </strong></p>
         <div class="movie-info-example">                                 
         <p> <strong>  Great, you got it ! <br>— Exactly like that </strong></p>
         </div>
@@ -72,15 +86,11 @@
      </div>
 
      
-     <div id="grid-item-trailer-settings">    
-             <p>Trailer settings:</p>
-            <label for="sourceSlider">Youtube</label>
-            <input type="range" id="sourceSlider" min="0" max="1" step="1" value="0">
-            <label for="sourceSlider">Privacy Video (piped) </label>
-            </div> 
+     
 
      <div id="grid-item-stats-frances" class="grid-item-stats">    
         <p class="stats"> <strong>
+            
             <br><br>
             United States<br><br>
             1h 26m<br><br>
@@ -90,13 +100,17 @@
         </div> 
 
 
-    <div id="grid-item-trailer-frances" class="animate-on-mouseover-trailer">
+    <div id="grid-item-trailer-frances" class="animate-on-mouseover-trailer grid-item-snap">
+        
         <div class="movie-container">
-            <iframe class="trailer" width="560" height="315" src="https://www.youtube-nocookie.com/embed/YdxCnCvCngk?si=_j46mybAffWRFwNs" 
+            <iframe id="trailerIframe" class="trailer" width="560" height="315" src="https://www.youtube-nocookie.com/embed/YdxCnCvCngk?si=_j46mybAffWRFwNs" 
             title="YouTube video player" 
             allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture; 
             web-share" allowfullscreen></iframe>
+          
+          <img class="arrow-rotate" src="halftone-arrow-7.png" >
+          <p id="small"> Reveal Enigma Score</p>   
          
         <!-- <div class="iframeContainer">
         <iframe class="Trailer"
@@ -119,6 +133,7 @@
     <div id="grid-item-name-tile-frances" class="animate-on-mouseover" >
 
         <div class="movie-container">
+                             
        <h2>Frances Ha </h2>       
        <div class="movie-info">
         <p>An endearing "finding your own path misadventure" steeped in rich NYC ambience, Greta Gerwig is amazing . .</p>
@@ -154,7 +169,7 @@
             </div> 
 
 
-        <div id="grid-item-trailer-coffee" class="animate-on-mouseover-trailer">
+        <div id="grid-item-trailer-coffee" class="animate-on-mouseover-trailer grid-item-snap" >
             <div class="movie-container">
             <iframe class="trailer" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gl5_tWU6Kf8?si=4M5v6AtERTmkNsRV" 
             title="YouTube video player"  
@@ -183,10 +198,10 @@
           
             <div class="movie-container">
                 <h2>A coffee in Berlin </h2>   
-                <div class="movie-info" class="coffee-info">
+                <div class="movie-info coffee-info">
 
                    
-                 <p> Tom Schilling makes a strong performance as Niko, a disenchanted 20s something university dropout with dimishing prospects. We follow Tom evading German bureaucracy while struggling to get a normal cup of coffee in an rapidly gentrifying Berlin . . </p>
+                 <p> Tom Schilling makes a strong performance as Niko, a disenchanted 20s something university dropout with dimishing prospects. We follow Tom evading bureaucracy while struggling to get a normal cup of coffee in an rapidly gentrifying Berlin . . </p>
              </div>
              </div>  
         </div>
@@ -210,7 +225,7 @@
             <img class="stats-image-hd" src="4k_3879447_negate.png" alt="4k icon"> 
         </div> 
 
-            <div id="grid-item-trailer-menu" class="animate-on-mouseover-trailer">
+            <div id="grid-item-trailer-menu" class="animate-on-mouseover-trailer grid-item-snap">
                 <div class="movie-container">
             <div class="iframeContainer">
             <iframe class="trailer" 
@@ -235,10 +250,10 @@
             <div id="grid-item-name-tile-menu" class="animate-on-mouseover">
                 <div class="movie-container">
                     <h2> The Menu </h2> 
-                    <div class="movie-info" id="coffee-info">
+                    <div class="movie-info coffee-info">
     
                        
-                     <p> Step into the world of exclusive culinary experiences, crafted by famous chef Slowik. Sequestered on a remote island, this appointment only restuarant is only accessable by ship, and serves a rotating menu of culinary delight — but everything is not what it seems, and soon the guests slowly realize they may have bitten of more than they can chew . .   </p>
+                     <p> Step into the world of exclusive culinary experiences. Sequestered on a remote island, this appointment only restuarant is only accessable by ship, and serves a rotating menu of culinary delight — but everything is not what it seems, and soon the guests slowly realize they may have bitten of more than they can chew . .   </p>
                  </div>
                  </div>  
                 
@@ -261,7 +276,7 @@
 
 
 
-                <div id="grid-item-trailer-worst" class="animate-on-mouseover-trailer">
+                <div id="grid-item-trailer-worst" class="animate-on-mouseover-trailer grid-item-snap">
               
                     <div class="movie-container">
 
@@ -319,7 +334,7 @@
                             
                     </div>
                         
-                <div id="grid-item-trailer-Tar" class="animate-on-mouseover-trailer" class="trailer">
+                <div id="grid-item-trailer-Tar" class="animate-on-mouseover-trailer trailer grid-item-snap" >
                     
                     <div class="movie-container">
 
@@ -360,10 +375,16 @@
                                 
                                
                         </div>
-
-
+            
+                  
+                      
+                    
+                   
 
         <div id="grid-item-links" class="animate-on-mouseover">
+            <a href="#" id="return-to-top">Return to Top</a>
+            
+
         <p>  <strong>To peruse our reviews and movieScores go to <a href="Reviews.html">Reviews</a>and for something special check out the <a href="">LuminéFlix List</a> where you can browse our selection of highest rated 
             contemporary movies which has brought something unique to our world. Or explore "guilty pleasure" movies by visiting our <a href=""> DarkPopcorn </a> list </strong></p>
         
@@ -374,7 +395,7 @@
 
 </div>
 
-
+</div>
 
 </body>
 
