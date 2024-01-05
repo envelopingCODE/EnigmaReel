@@ -151,15 +151,8 @@ nav a:hover {
     background-color: rgb(0, 183, 255);
 }
 
-@media screen and (max-width: 700px) {
-    nav li{display:block; }
-    nav a {display:block;
-    text-align: center;
-    margin-bottom: 5px;}
-    }
 
-
-
+    
 #noJS {
    
     align-self: center;
@@ -251,7 +244,7 @@ nav a:hover {
 /* setting up main grid properties */
 
 #landing-grid {
-    display: grid;
+   display: grid;
     max-width: 1270px;
      grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
@@ -323,7 +316,7 @@ nav a:hover {
     align-self: center;
     justify-content: center;
     text-align: center ;
-    background-color: rgba(33, 119, 125, 0.041);
+    background-color: rgba(3, 12, 12, 0.124);
 }
 
 .grid-item-stats {
@@ -578,7 +571,7 @@ nav a:hover {
 }
 
 .coffee-info {
-    width: 500px;
+    width: 400px;
 }
 
 
@@ -658,8 +651,8 @@ nav a:hover {
     }
     
     #sourceSlider {
-        writing-mode: bt-lr; /* Vertical writing mode */
-        appearance: slider-vertical; /* This ensures proper rendering in some browsers */
+        writing-mode:vertical ;
+   
         height: 15px; /* Adjust the height based on your design */
         margin: 20px auto;
         display: block;
@@ -672,8 +665,7 @@ nav a:hover {
     }
 
     #scrollModeSlider {
-        writing-mode: bt-lr; /* Vertical writing mode */
-        appearance: slider-vertical; /* This ensures proper rendering in some browsers */
+        writing-mode: vertical; /* Vertical writing mode */
         height: 15px; /* Adjust the height based on your design */
         margin: 20px auto;
         display: block;
@@ -687,4 +679,214 @@ nav a:hover {
         margin-left: 10px;
         vertical-align: middle;
         font-size: 0.8em;
+    }
+
+
+
+
+
+    @media screen and (max-width: 900px) { 
+
+        .movie-info-rating {
+            opacity: 1;
+        }
+
+     
+        
+    }
+
+
+    
+
+    /* Responsive Design */
+
+@media screen and (max-width: 700px) {
+    nav li{display:block; }
+    nav a {display:block;
+    text-align: center;
+    margin-bottom: 5px;}
+    }
+
+    @media screen and (max-width: 768px) {
+        
+
+        html, body {
+            margin: 2%;
+            height: 100vh;
+            overflow:scroll;
+          }
+          
+        
+        body {
+          font-size: 1em; /* Adjust font size for smaller screens */
+         
+        }
+      
+        nav ul {
+          text-align: center; /* Center navigation links on small screens */
+        }
+      
+        nav li {
+          display: block;
+          margin-bottom: 5px;
+        }
+      
+        .Container {
+          
+          max-width: 768px;
+          min-height:max-content;
+          width: 100%;
+        }
+      
+        #landing-grid  {
+            display: flex;
+            flex-direction: column;
+            
+            height: calc(100vh - 85px);
+            margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+            /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+            
+          
+         
+        }
+
+        #grid-item-example {
+            display: none;
+        }
+
+        .movie-container {
+            scale: 0.7;
+        }
+       
+   
+      .grid-item-stats, .movie-info {
+        display: none;
+   
+     justify-self: center;
+     justify-items: center;
+   
+     
+     
+      }
+
+
+      #grid-item-stats-landing {
+        display:flex;
+     flex-wrap: wrap;
+flex-direction: column;
+        width: 60%;
+        height: fit-content;
+      }
+
+      .name-tiles {
+        width: 100%;
+        font-size: larger;
+      }
+
+      .grid-item-info {
+        display:flex;
+      }
+
+      .stats-image-hd {
+       width: fit-content;
+       height: fit-content;
+       scale: 0.4;
+    
+      }
+      
+      .movie-info-rating {
+        opacity: 1;
+        
+    }
+
+        
+    
+
+        /* Adjust grid items for smaller screens */
+        #grid-item-trailer-frances,
+        #grid-item-trailer-coffee,
+        #grid-item-trailer-menu,
+        #grid-item-trailer-worst,
+        #grid-item-trailer-Tar {
+        grid-column: span 1;
+           
+        }
+      
+        .grid-item-info,
+        .grid-item-name-tile-frances,
+        .grid-item-name-tile-coffee,
+        .grid-item-name-tile-menu,
+        .grid-item-name-tile-worst,
+        .grid-item-name-tile-Tar {
+            grid-column: span 2;
+        }
+      
+        .movie-info,
+        .movie-info-rating {
+          width: 90%; /* Make movie info full width on small screens */
+        
+        }
+      
+        #return-to-top {
+          bottom: 10px; /* Adjust position for smaller screens */
+          right: 10px;
+        }
+      
+       .movie-container {
+        min-width:100%;
+       }
+      
+      /* Additional styling for better mobile experience */
+      #grid-item-one,
+      #grid-item-example,
+      #grid-item-trailer-settings,
+      #grid-item-links,
+      #grid-item-info,
+      #grid-item-stats,
+      #grid-item-name-tile {
+        padding: 20px; /* Add padding for better spacing on small screens */
+      }
+    
+
+
+      
+      
+      /* Adjust the font size for smaller screens */
+      h1,
+      h2,
+      h3 {
+        font-size: 1.5em;
+      }
+      
+      /* Adjust the width and positioning of the arrow image */
+      .arrow-rotate,
+      #arrow-image {
+        width: 10%;
+        height: auto;
+        right: 5%;
+        bottom: -20%;
+      }
+      
+      #cinema-image {
+        width: 30%;
+      }
+      
+      .stats-image-hd {
+        width: 70%;
+        left: 5%;
+      }
+      
+      /* Add responsive styling for the progress bar */
+      #progress-bar {
+        display: none; /* Hide the progress bar on small screens */
+      }
+      
+      /* Show the movie info and rating on hover for better mobile experience */
+      .movie-container:hover .movie-info,
+      .movie-container:hover .movie-info-rating {
+        opacity: 1;
+      }
+    
     }

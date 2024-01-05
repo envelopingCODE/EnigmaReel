@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
             document.body.style.scrollSnapType = 'proximity';                        // Snap Scroll
             document.documentElement.style.scrollSnapType = 'proximity'; 
-            scrollModeText.innerText = 'Snap Scroll';                              // Display text to notify user of changed setting
+            
+               scrollModeText.innerText = 'Snap Scroll';                              // Display text to notify user of changed setting
         } else {
             
             document.body.style.scrollSnapType = 'none';                       // Normal Scroll
@@ -94,9 +95,9 @@ function changeVideoSource() {
     if (slider.value == 0) {
         iframeFrances.src = youtubeSourceFrances;
         iframeCoffee.src = youtubeSourceCoffee;
-        iframeMenu.scr = youtubeSourceMenu;
-        iframeWorst.scr = youtubeSourceWorst;
-        iframeTar.scr = youtubeSourceTar;
+        iframeMenu.src = youtubeSourceMenu;
+        iframeWorst.src = youtubeSourceWorst;
+        iframeTar.src = youtubeSourceTar;
 
 
     } else {
