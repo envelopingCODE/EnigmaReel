@@ -36,7 +36,9 @@ body {
         text-decoration: none;
     }
     
-       
+    .nav-menu.show {
+        display: flex;
+    }     
             
         
 /* 
@@ -903,7 +905,7 @@ flex-direction: column;
     }
 
     
-    /* Add this to your existing CSS file */
+   
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -954,6 +956,7 @@ flex-direction: column;
 
     .nav-menu.show {
         display: flex;
+
     }
 
     .nav-menu a {
@@ -964,13 +967,12 @@ flex-direction: column;
         text-decoration: none;
     }
 
-#m1 {
+#Hello {
     color:  rgb(0, 255, 200);
 }
 
-#Hello {
-    color:  white;
-}
+
+
 
 .menu-toggle:hover span {
     background: rgb(0, 183, 255); /* Change color on hover */
@@ -981,7 +983,7 @@ flex-direction: column;
     width: 25px;
     background: rgb(0, 255, 200);
     margin: 5px 0;
-    transition: 0.4s;
+   
 }
 
 }
