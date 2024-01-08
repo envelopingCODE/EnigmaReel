@@ -64,7 +64,8 @@ body {
       }
       
       #accept-cookies {
-        background-color: #4CAF50;
+        background-color: #df2235;;
+        
         color: white;
         padding: 10px 20px;
         border: none;
@@ -72,14 +73,32 @@ body {
         cursor: pointer;
         margin-top: 10px;
       }
+
+      #reject-cookies {
+        background-color: rgb(56, 147, 175);
+        width: 40%;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      #tracking-monster {
+    width: 150px;
+      }
       
       #accept-cookies:hover {
-        background-color: #45a049;
+        background-color: #ff0019;
       }
 
       #reject-cookies:hover {
-        background-color: #bc2c3a;
+        background-color: rgb(0, 255, 200);
       }
+
+      
 
 /* 
 Apply scroll snapping to  trailers  */

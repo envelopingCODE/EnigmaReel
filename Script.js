@@ -1,6 +1,48 @@
 "use strict"; 
 
 
+// DOM declarations
+
+const cookiePopUpEl = document.getElementById('cookie-popup');
+const acceptCookiesBtn = document.getElementById('accept-cookies');
+const rejectCookiesBtn = document.getElementById('reject-cookies');
+
+// Event listeners
+
+document.addEventListener('DOMContentLoaded', checkCookies);
+acceptCookiesBtn.addEventListener('click', acceptCookies);
+rejectCookiesBtn.addEventListener('click', rejectCookies);
+
+// Function to check if cookies have been accepted already
+
+function checkCookies() {
+  const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+  if (!cookiesAccepted) {
+    cookiePopUpEl.style.display = 'block';
+  }
+}
+
+// Function to accept cookies
+
+function acceptCookies() {
+  localStorage.setItem('cookiesAccepted', true);
+  cookiePopUpEl.style.display = 'none';
+}
+
+// Function to reject cookies and use privacy front-end
+
+function rejectCookies() {
+  // Add  code to redirect or handle the rejection
+  console.log('Cookies rejected, redirecting to privacy front-end...');
+}
+
+
+
+
+
+
+
+
 // Progress bar
 
 document.addEventListener('DOMContentLoaded', function () {
