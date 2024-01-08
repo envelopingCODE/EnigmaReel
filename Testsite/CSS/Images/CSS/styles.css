@@ -110,6 +110,10 @@ body {
         font-size: 0.6em;
     }
     
+    a {
+        border-bottom: 1px solid rgb(0, 255, 200);
+    
+    }
 
 /* 
 Apply scroll snapping to  trailers  */
