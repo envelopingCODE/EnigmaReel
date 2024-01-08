@@ -253,10 +253,10 @@ nav a:hover {
    display: grid;
     max-width: 1270px;
     
-     grid-template-columns: repeat(10, 1fr);
+     grid-template-columns: 1fr 4fr 4fr;
     grid-template-rows: auto;
        gap: 5%; 
-       row-gap: 10%;
+       row-gap: 9%;
        scroll-snap-type: y proximity; /* Enabled scroll snapping */
     
 }
@@ -264,9 +264,8 @@ nav a:hover {
 /* setting up grid styling for each grid item: */
 
 #grid-item-one {
-    grid-column: span 5;
-    grid-row: span 1;
-  
+
+ 
    background-color:  rgba(3, 12, 12, 0.124);
      align-self: center;
      justify-content: center;
@@ -276,9 +275,9 @@ nav a:hover {
 
 
 #grid-item-example {
-    grid-column: span 4;
   
-    
+    width: 100%;
+    margin: 5%;
     align-self: center;
     justify-content: center;
     text-align-last: center;
@@ -291,7 +290,7 @@ nav a:hover {
    
     /* grid-column: 1 / span 8;
  
-    grid-row: span 1; /* Change this to span only 1 row */
+    grid-row: span 1; 
 /* 
     margin-top: -30%;
    ;
@@ -305,8 +304,7 @@ nav a:hover {
 
 #grid-item-trailer-frances {
  
-    grid-column: span 6;
-    grid-row: span 1;
+
     align-self: center;
     justify-content: center;
     text-align-last: center;
@@ -316,8 +314,7 @@ nav a:hover {
 
 .grid-item-info {
     display: none;
-    grid-column: span 3;
-    grid-row: span 1;
+ 
     padding: 40px;
     position: relative;
     align-self: center;
@@ -327,7 +324,7 @@ nav a:hover {
 }
 
 .grid-item-stats {
-
+width: 80%;
     text-align: center;  
      justify-content: center;
     background-color: rgba(3, 12, 12, 0.124);
@@ -335,15 +332,13 @@ nav a:hover {
 
 #grid-item-stats-landing {
    
-    grid-column: span 1;
-    grid-row: 1;
+  width: min-content;
     background-color: rgba(3, 12, 12, 0.124);
 
 }
 
 #grid-item-stats-frances {
 
-    grid-column: span 1;
    
   
     margin: auto;
@@ -357,8 +352,6 @@ nav a:hover {
 
 #grid-item-stats-coffee {
 
-    grid-column: span 1;
-    grid-row: span 1;
     margin: auto;
     padding-bottom: 30%;
     background-color:  rgba(3, 12, 12, 0.124);
@@ -367,9 +360,7 @@ nav a:hover {
 
 #grid-item-stats-menu {
     
-    grid-column: span 1;
   
-    grid-row: span 1;
     margin: auto;
     padding-bottom: 30%;
     background-color:  rgba(3, 12, 12, 0.124);
@@ -381,7 +372,6 @@ nav a:hover {
   
 
 #grid-item-name-tile-frances {
-    grid-column: span 3;
     padding: 40px;
     align-self: center;
     justify-content: center;
@@ -392,8 +382,6 @@ nav a:hover {
 #grid-item-trailer-coffee {
     
     
-    grid-column: span 6;
-    grid-row: span 1;
    
     align-self: center;
     justify-content: center;
@@ -403,7 +391,6 @@ nav a:hover {
     }
 
     #grid-item-name-tile-coffee {
-        grid-column: span 3;
         padding: 40px;
         align-self: center;
         justify-content: center;
@@ -416,7 +403,6 @@ nav a:hover {
 
 
     #grid-item-trailer-menu {
-        grid-column: span 6;
        
          align-self: center;
         justify-content: center;
@@ -425,7 +411,6 @@ nav a:hover {
     }
     
     #grid-item-name-tile-menu {
-        grid-column: span 3;
     
         padding: 40px;
         align-self: center;
@@ -437,9 +422,8 @@ nav a:hover {
     #grid-item-stats-worst {
         
      
-        grid-column: span 1;
        
-        grid-row: span 1;
+       
         background-color:  rgba(3, 12, 12, 0.124);
         margin: auto;
         padding-bottom: 30%;
@@ -448,7 +432,6 @@ nav a:hover {
     }
 
     #grid-item-trailer-worst {
-        grid-column: span 6;
 
     
         align-self: center;
@@ -458,7 +441,6 @@ nav a:hover {
     }
 
     #grid-item-name-tile-worst {
-        grid-column: span 3;
         padding: 40px;
         margin: 30px;
         align-self: center;
@@ -473,7 +455,6 @@ nav a:hover {
 
     #grid-item-stats-tar {
 
-        grid-column: span 1;
         background-color:  rgba(3, 12, 12, 0.124);
         margin: auto;
         padding-bottom: 30%;
@@ -481,7 +462,6 @@ nav a:hover {
     }
 
     #grid-item-trailer-Tar {
-        grid-column: span 6;
       
         align-self: center;
         justify-content: center;
@@ -490,7 +470,6 @@ nav a:hover {
     }
 
     #grid-item-name-tile-Tar {
-        grid-column: span 3;
  
         padding: 40px;
         margin: 30px;
@@ -529,10 +508,8 @@ nav a:hover {
 
      
         #grid-item-links {
-            grid-column-start: 2; 
-            grid-column-end: span 6;
-            grid-row: span 1;
-          
+          grid-column: span 3;
+          width: fit-content;
             padding: 40px;
         margin-top: 10%;
         background: linear-gradient(to top, rgba(3, 12, 12, 0.124), transparent);
@@ -775,8 +752,8 @@ nav a:hover {
 
         #grid-item-name-tile-worst-mini {   
             display: flex; 
-        grid-column: span 1;
-        grid-row: span 1;
+     
+      
         background-color:  rgba(3, 12, 12, 0.124);
         margin: auto;
         text-align: center;
@@ -847,7 +824,7 @@ flex-direction: column;
         #grid-item-trailer-menu,
         #grid-item-trailer-worst,
         #grid-item-trailer-Tar {
-        grid-column: span 1;
+      
            
         }
       
@@ -857,7 +834,7 @@ flex-direction: column;
         .grid-item-name-tile-menu,
         .grid-item-name-tile-worst,
         .grid-item-name-tile-Tar {
-            grid-column: span 2;
+         
         }
       
         .movie-info,
