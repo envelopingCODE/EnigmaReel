@@ -17,11 +17,19 @@ rejectCookiesBtn.addEventListener('click', rejectCookies);
 
 function checkCookies() {
   const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-  const cookiesRejected = localStorage.getItem('cookiesRejected');
-  if (!cookiesAccepted || !cookiesRejected) {
-    cookiePopUpEl.style.display = 'block';
+    const cookiesRejected = localStorage.getItem('cookiesRejected');
+
+    console.log("Checking cookies . .")
+
+  if (cookiesAccepted) {
+    cookiePopUpEl.style.display = 'none';}
+    
+ else if (cookiesRejected) {
+    cookiePopUpEl.style.display = 'none';
   }
-}
+  }
+
+
 
 // Function to accept cookies
 
@@ -36,7 +44,7 @@ function rejectCookies() {
   // Add  code to redirect or handle the rejection
   console.log('Cookies rejected, redirecting to privacy front-end...');
   localStorage.setItem('cookiesRejected', true);
-  cookiePopUpEl.style.display = 'none';
+  cookiePopUpEl.style.display = none;
 }
 
 
