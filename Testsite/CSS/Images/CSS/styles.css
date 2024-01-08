@@ -756,7 +756,16 @@ width: 80%;
         
     }
 
-
+    @media screen and (max-width: 600px) {
+        #cookie-popup {
+          max-width: 90%;
+        }
+      
+        #accept-cookies,
+        #reject-cookies {
+          width: 100%;
+        }
+      }
     
 
     /* Responsive Design */

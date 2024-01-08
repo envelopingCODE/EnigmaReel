@@ -44,7 +44,7 @@ function rejectCookies() {
   // Add  code to redirect or handle the rejection
   console.log('Cookies rejected, redirecting to privacy front-end...');
   localStorage.setItem('cookiesRejected', true);
-  cookiePopUpEl.style.display = none;
+  cookiePopUpEl.style.display = 'none';
 }
 
 
