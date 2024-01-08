@@ -17,7 +17,8 @@ rejectCookiesBtn.addEventListener('click', rejectCookies);
 
 function checkCookies() {
   const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-  if (!cookiesAccepted) {
+  const cookiesRejected = localStorage.getItem('cookiesRejected');
+  if (!cookiesAccepted || !cookiesRejected) {
     cookiePopUpEl.style.display = 'block';
   }
 }
@@ -34,6 +35,8 @@ function acceptCookies() {
 function rejectCookies() {
   // Add  code to redirect or handle the rejection
   console.log('Cookies rejected, redirecting to privacy front-end...');
+  localStorage.setItem('cookiesRejected', true);
+  cookiePopUpEl.style.display = 'none';
 }
 
 
