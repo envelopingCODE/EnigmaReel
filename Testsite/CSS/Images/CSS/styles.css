@@ -111,7 +111,7 @@ Apply scroll snapping to  trailers  */
 
 
 
-/* Apply smooth in and out effect to specific elements */
+/* Apply smooth in and out effect*/
 .movie-container,
 .movie-info,
 .movie-info-rating,
@@ -467,6 +467,10 @@ nav a:hover {
         background-color: rgba(3, 12, 12, 0.124);
     }
 
+    #grid-item-name-tile-worst-mini {
+        display: none;
+    }
+
     #grid-item-stats-tar {
 
         grid-column: span 1;
@@ -711,10 +715,7 @@ nav a:hover {
     nav a {display:block;
     text-align: center;
     margin-bottom: 5px;}
-    }
-
-    @media screen and (max-width: 768px) {
-        
+            
 
         html, body {
             margin: 2%;
@@ -766,19 +767,33 @@ nav a:hover {
             display: none;
         }
 
+ #grid-item-name-tile-worst {   
+            display: none; 
+    
+
+        }
+
+        #grid-item-name-tile-worst-mini {   
+            display: flex; 
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color:  rgba(3, 12, 12, 0.124);
+        margin: auto;
+        text-align: center;
+        align-items: center;
+
+        }
+
         .movie-container {
             scale: 0.7;
         }
        
+
+        
    
       .grid-item-stats, .movie-info {
         display: none;
-   
-     justify-self: center;
-     justify-items: center;
-   
-     
-     
+        
       }
 
 
@@ -793,7 +808,19 @@ flex-direction: column;
       .name-tiles {
         width: 100%;
         font-size: larger;
+        text-align: center;
+        word-wrap:normal;
       }
+
+      #grid-item-name-tile-menu {
+        
+        padding: 40px;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+
 
       .grid-item-info {
         display:flex;
