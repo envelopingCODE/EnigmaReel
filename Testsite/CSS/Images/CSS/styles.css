@@ -1017,39 +1017,47 @@ flex-direction: column;
         position: absolute;
         top: 10px; 
         left: 0;
-        background:  rgba(3, 12, 12, 0.7); 
+        background: rgba(3, 12, 12, 0.7); 
     }
 
     .nav-menu.show {
         display: flex;
+    }
 
+    .menu-toggle .close-icon {
+        display: none; 
+        color: rgb(0, 255, 200);
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .menu-toggle.active span {
+        background: transparent; 
+    }
+
+    .menu-toggle.active .close-icon {
+        display: block; 
     }
 
     .nav-menu a {
         color: #fff; 
-        
         padding: 15px;
         text-align: center;
         text-decoration: none;
     }
 
-#Hello {
-    color:  rgb(0, 255, 200);
-}
+    #Hello {
+        color: rgb(0, 255, 200);
+    }
 
+    .menu-toggle:hover span {
+        background: rgb(0, 183, 255); /* Change color on hover */
+    }
 
-
-
-.menu-toggle:hover span {
-    background: rgb(0, 183, 255); /* Change color on hover */
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 30px;
-    background: rgb(0, 255, 200);
-    margin: 5px 0;
-   
-}
-
+    .menu-toggle span {
+        height: 3px;
+        width: 30px;
+        background: rgb(0, 255, 200);
+        margin: 5px 0;
+    }
 }
