@@ -13,7 +13,7 @@ body {
 
 
    p {
-    padding: 6%; /* Adjust padding for better spacing */
+    padding: 6%;
     margin: 2%;
 }
 
@@ -88,7 +88,7 @@ Apply scroll snapping to  trailers  */
     height: 2px; 
     width: 0;
     background-color: rgb(0, 255, 200);
-    width: 50%; /* Adjust width based on progress */
+    width: 50%; 
    
     animation: glow 3s infinite; /* animation keyframes cycling duration */
   
@@ -216,10 +216,10 @@ nav a:hover {
   
   .fill p {
     margin: 0;
-    color: #fff; /* Set the text color */
+    color: #fff; 
     font-weight: bold;
     text-align: center;
-    width: 100%; /* Make the text fill the entire width */
+    width: 100%; /* Made the text fill the entire width */
   }
   
 .rating-bar {
@@ -234,8 +234,8 @@ nav a:hover {
   
   .fill {
     height: 100%;
-    background-color:rgb(0, 255, 200); /* Set the fill color of the rating bar */
-    transition: width 0.5s ease; /* Add a transition for a smooth effect */
+    background-color:rgb(0, 255, 200); 
+    transition: width 0.5s ease; 
        display: flex;
     align-items: center;
   }
@@ -255,9 +255,9 @@ nav a:hover {
     
      grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
-       gap: 5%; /* added gap between grid items */
+       gap: 5%; 
        row-gap: 10%;
-       scroll-snap-type: y proximity; /* Enable scroll snapping */
+       scroll-snap-type: y proximity; /* Enabled scroll snapping */
     
 }
 
@@ -525,7 +525,7 @@ nav a:hover {
 
      
         #grid-item-links {
-            grid-column-start: 2; /* Starting point of the element within the grid */
+            grid-column-start: 2; 
             grid-column-end: span 6;
             grid-row: span 1;
           
@@ -554,7 +554,7 @@ nav a:hover {
 
     top: 80%;
      width: 350px; 
-    background: rgba(0, 0, 0, 0.417); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.417); 
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -569,7 +569,7 @@ nav a:hover {
     top: +106%;
     font-weight: bold;
      width: 92%; 
-    background: rgba(0, 0, 0, 0.417); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.417); 
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -587,13 +587,13 @@ nav a:hover {
 .movie-info-example {
     position: absolute;
     top: 60%;
-    left: 30% ;/* Position to the left of the movie title */
-    width: 350px; /* Adjust the width as needed */
+    left: 30% ;
+    width: 350px; 
     padding-top: 20%;
 
     font-weight: bold;
      width: 400px; 
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.7); 
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -659,10 +659,10 @@ nav a:hover {
     
     #sourceSlider {
         writing-mode:vertical-lr ;
-        height: 15px; /* Adjust the height based on your design */
+        height: 15px; 
         margin: 20px auto;
         display: block;
-        transform: rotate(270deg); /* Rotate to make it vertical */
+        transform: rotate(270deg); 
     }
     
     label[for="sourceSlider"] {
@@ -672,10 +672,10 @@ nav a:hover {
 
     #scrollModeSlider {
         writing-mode: vertical; /* Vertical writing mode */
-        height: 15px; /* Adjust the height based on your design */
+        height: 15px; 
         margin: 20px auto;
         display: block;
-        transform: rotate(270deg); /* Rotate to make it vertical */
+        transform: rotate(270deg); /* Rotated to make it vertical */
         width: 39px;
 
         right: 10px
@@ -723,12 +723,12 @@ nav a:hover {
           }
           
           p {
-            padding: 6%; /* Adjust padding for better spacing */
+            padding: 6%; /* Adjusted padding for better spacing */
             margin: 0%;
             }
         
         body {
-          font-size: 1em; /* Adjust font size for smaller screens */
+          font-size: 1em; /* Adjusted font size for smaller screens */
          
         }
       
@@ -835,14 +835,14 @@ flex-direction: column;
       
         .movie-info,
         .movie-info-rating {
-          width: 90%; /* Make movie info full width on small screens */
+          width: 90%; /* Makes movie info full width on small screens */
         
         }
 
         
       
         #return-to-top {
-          bottom: 10px; /* Adjust position for smaller screens */
+          bottom: 10px; /* Adjusts position for smaller screens */
           right: 10px;
         }
       
@@ -850,7 +850,7 @@ flex-direction: column;
         min-width:100%;
        }
       
-      /* Additional styling for better mobile experience */
+   
       #grid-item-one,
       #grid-item-example,
       #grid-item-trailer-settings,
@@ -858,21 +858,21 @@ flex-direction: column;
       #grid-item-info,
       #grid-item-stats,
       #grid-item-name-tile {
-        padding: 20px; /* Add padding for better spacing on small screens */
+        padding: 20px; /* Added padding for better spacing on small screens */
       }
     
 
 
       
       
-      /* Adjust the font size for smaller screens */
+      /* Adjusted the font size for smaller screens */
       h1,
       h2,
       h3 {
         font-size: 1.5em;
       }
       
-      /* Adjust the width and positioning of the arrow image */
+      /* Adjusted the width and positioning of the arrow image */
       .arrow-rotate,
       #arrow-image {
         width: 10%;
@@ -891,7 +891,7 @@ flex-direction: column;
         left: 5%;
       }
       
-      /* Add responsive styling for the progress bar */
+      
       #progress-bar {
         display: none; /* Hide the progress bar on small screens */
       }
@@ -940,7 +940,7 @@ flex-direction: column;
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
-        transition: 0.3s; /* Add smooth transition effect */
+        transition: 0.3s; 
         cursor: pointer;
     }
 
@@ -949,9 +949,9 @@ flex-direction: column;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 10px; /* Adjust this value based on your layout */
+        top: 10px; 
         left: 0;
-        background:  rgba(3, 12, 12, 0.7); /* Change the background color */
+        background:  rgba(3, 12, 12, 0.7); 
     }
 
     .nav-menu.show {
@@ -960,7 +960,7 @@ flex-direction: column;
     }
 
     .nav-menu a {
-        color: #fff; /* Change the text color */
+        color: #fff; 
         
         padding: 15px;
         text-align: center;
