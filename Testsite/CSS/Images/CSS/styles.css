@@ -658,7 +658,7 @@ nav a:hover {
     }
     
     #sourceSlider {
-        writing-mode:vertical-lr ;
+       
         height: 15px; 
         margin: 20px auto;
         display: block;
@@ -671,7 +671,7 @@ nav a:hover {
     }
 
     #scrollModeSlider {
-        writing-mode: vertical; /* Vertical writing mode */
+  
         height: 15px; 
         margin: 20px auto;
         display: block;
