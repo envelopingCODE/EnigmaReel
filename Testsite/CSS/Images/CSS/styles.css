@@ -41,6 +41,46 @@ body {
     }     
             
         
+
+
+    #cookie-popup {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        max-width: 400px;
+        text-align: center;
+      }
+      
+      .cookie-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #accept-cookies {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      
+      #accept-cookies:hover {
+        background-color: #45a049;
+      }
+
+      #reject-cookies:hover {
+        background-color: #bc2c3a;
+      }
+
 /* 
 Apply scroll snapping to  trailers  */
 
@@ -819,23 +859,8 @@ flex-direction: column;
     
 
         /* Adjust grid items for smaller screens */
-        #grid-item-trailer-frances,
-        #grid-item-trailer-coffee,
-        #grid-item-trailer-menu,
-        #grid-item-trailer-worst,
-        #grid-item-trailer-Tar {
       
-           
-        }
-      
-        .grid-item-info,
-        .grid-item-name-tile-frances,
-        .grid-item-name-tile-coffee,
-        .grid-item-name-tile-menu,
-        .grid-item-name-tile-worst,
-        .grid-item-name-tile-Tar {
-         
-        }
+     
       
         .movie-info,
         .movie-info-rating {
