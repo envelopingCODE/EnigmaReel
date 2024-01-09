@@ -25,6 +25,13 @@ body {
         }
         
       
+        #parallax-section {
+            height: 100px; /* Set an appropriate height for your section */
+            background-image: url('pexels_ERT.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+          }
 
         #grid-item-links {
             scroll-snap-align: center;
@@ -447,10 +454,11 @@ width: 80%;
 
 #grid-item-name-tile-frances {
     padding: 40px;
-    align-self: center;
-    justify-content: center;
-    text-align-last: center;
-    background-color: rgba(3, 12, 12, 0.124);
+        align-self: center;
+        justify-content: center;
+        text-align-last: center;
+        background-color: rgba(3, 12, 12, 0.124);
+    
 }
 
 #grid-item-trailer-coffee {
@@ -468,10 +476,10 @@ width: 80%;
         padding: 40px;
         align-self: center;
         justify-content: center;
-        text-align:center;
-         background-color: rgba(3, 12, 12, 0.124);
-    
+        text-align-last: center;
+        background-color: rgba(3, 12, 12, 0.124);
     }
+    
 
    
 
@@ -744,6 +752,41 @@ width: 80%;
 
 
 
+.icon-container {
+    display: flex;
+
+    justify-content: space-around;
+
+    /* row-gap: 28x;  */
+    /* left: -44%;
+
+     /* margin: 18%;
+     top: -80%; */ 
+  
+}
+
+.heart-icon, .skull-icon, .popcorn-icon {
+    font-size: 24px;
+    opacity: 0.04;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: 0.07s;
+ 
+    margin-top: 3%; 
+}
+
+.heart-icon {
+    color: #ffffff; /* White color for heart */
+}
+
+.skull-icon {
+    color: #2d2d2d; /* Dark gray color for skull */
+}
+
+
+
 
 
     @media screen and (max-width: 900px) { 
@@ -781,6 +824,7 @@ width: 80%;
             margin: 2%;
             height: 100vh;
             overflow:scroll;
+            overflow-x: hidden;
           }
           
           p {
@@ -802,12 +846,7 @@ width: 80%;
           margin-bottom: 5px;
         }
       
-        .Container {
-          
-          max-width: 768px;
-          min-height:max-content;
-          width: 100%;
-        }
+        
       
         #landing-grid  {
             display: flex;
@@ -845,7 +884,8 @@ width: 80%;
         }
 
         .movie-container {
-            scale: 0.7;
+            scale: 0.6;
+            width: 80%;
         }
        
 
@@ -1055,6 +1095,12 @@ flex-direction: column;
         text-decoration: none;
     }
 
+    #cookie-popup {
+
+   margin-top:20% ;
+        overflow: scroll;
+    }
+   
     #Hello {
         color: rgb(0, 255, 200);
     }
@@ -1069,4 +1115,6 @@ flex-direction: column;
         background: rgb(0, 255, 200);
         margin: 5px 0;
     }
+
+    
 }

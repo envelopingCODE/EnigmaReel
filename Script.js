@@ -170,3 +170,78 @@ function changeVideoSource() {
             navMenu.classList.toggle('show');
         });
     });
+
+    // DOM dec
+    
+    function toggleHeart(movie) {
+        let heartIcon = this;  // 'this' refers to the clicked element
+        let currentOpacity = parseFloat(heartIcon.style.opacity);
+    
+        if (currentOpacity === 0.6) {
+            heartIcon.style.opacity = '0.04';
+        } else {
+            heartIcon.style.opacity = '0.6';
+        }
+    }
+    
+    // Function to toggle opacity for skull icon
+    function toggleSkull(movie) {
+        let skullIcon = this;  // 'this' refers to the clicked element
+        let currentOpacity = parseFloat(skullIcon.style.opacity);
+    
+        if (currentOpacity === 0.6) {
+            skullIcon.style.opacity = '0.04';
+        } else {
+            skullIcon.style.opacity = '0.6';
+        }
+    }
+
+      // Function to toggle opacity for popcorn icon
+      function togglePopcorn(movie) {
+        let popcornIcon = this;  // 'this' refers to the clicked element
+        let currentOpacity = parseFloat(popcornIcon.style.opacity);
+
+        if (currentOpacity === 0.6) {
+            popcornIcon.style.opacity = '0.04';
+        } else {
+            popcornIcon.style.opacity = '0.6';
+        }
+        console.log(`You 🍿 ${movie}`);
+    }
+
+    // Adding debounced event listener to each heart icon
+    let heartIcons = document.querySelectorAll('.heart-icon');
+    heartIcons.forEach(function(heartIcon) {
+        heartIcon.addEventListener('click', debounce(function() {
+            toggleHeart.call(this, 'Your Movie Title');
+        }, 200));
+    });
+
+    // Adding debounced event listener to each skull icon
+    let skullIcons = document.querySelectorAll('.skull-icon');
+    skullIcons.forEach(function(skullIcon) {
+        skullIcon.addEventListener('click', debounce(function() {
+            toggleSkull.call(this, 'Your Movie Title');
+        }, 200));
+    });
+
+    // Adding debounced event listener to each popcorn icon
+    let popcornIcons = document.querySelectorAll('.popcorn-icon');
+    popcornIcons.forEach(function(popcornIcon) {
+        popcornIcon.addEventListener('click', debounce(function() {
+            togglePopcorn.call(this, 'Your Movie Title');
+        }, 200));
+    });
+
+    // Debounce function implementation
+    function debounce(func, delay) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                func.apply(context, args);
+            }, delay);
+        };
+    }
