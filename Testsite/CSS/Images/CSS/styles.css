@@ -874,6 +874,8 @@ width: 80%;
 
         #grid-item-name-tile-worst-mini {   
             display: flex; 
+            transform: scale(1.2);
+            transition-duration: 0.4s;
      
       
         background-color:  rgba(3, 12, 12, 0.124);
