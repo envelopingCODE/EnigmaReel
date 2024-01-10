@@ -767,12 +767,13 @@ width: 80%;
 
 .heart-icon, .skull-icon, .popcorn-icon {
     font-size: 24px;
-    opacity: 0.04;
+    opacity: 0.08;
     cursor: pointer;
     border: none;
     background-color: transparent;
     outline: none;
-    transition: 0.07s;
+    transition: all 0.02s ease-out;
+   
  
     margin-top: 3%; 
 }
