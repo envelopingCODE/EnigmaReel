@@ -23,10 +23,20 @@ body {
     padding: 5px;
     margin: 0px;
     border-bottom: 3px solid rgb(0, 0, 0);
+    font-weight: bold;  
+    transition: all 1s ease-out;
+    
     /* box-shadow: 1px 4px 1px  rgb(0, 0, 0); */
     
     
 }
+
+p:hover {     
+    transform: scale(1.05);
+  
+    
+}
+
     p.zero {
     background-color: rgba(197, 14, 14, 0.89);
     background: linear-gradient(to right, rgba(197, 14, 14, 0.89), transparent);}
@@ -62,9 +72,20 @@ body {
         background: linear-gradient(to right, rgba(0, 255, 213, 0.747), transparent);
         background-color: rgba(26, 232, 170, 0.919);
    
-
+      
    
     
+    }
+
+    a {
+        color:rgb(3, 40, 52) ;
+        
+    }
+
+    
+   .reviews a:hover {
+        color:rgba(14, 255, 235, 0.709);
+        font-weight:900;
     }
 
     #Reviews {font-size:120%;}
@@ -99,10 +120,10 @@ body {
         
  <div id="Reviews"> 
  <p class="ten"><b><br>10.0  PERFECT </b>  </p>
- <p class="nine"><b><br>9.0  EXCEPTIONAL</b> ——  <a href="index.html#grid-item-name-tile-frances">"Frances Ha"</a></p>
- <p class="eight"><b><br>8.0  EXCELLENT</b> ——— <a href="index.html#grid-item-trailer-worst"> "The Worst Person in the World"</a>——  <a href="index.html#grid-item-name-tile-Tar"> Tár</a> </p>  
- <p class="seven"><b><br>7.0  GREAT </b>———— <a href="index.html#grid-item-name-tile-coffee"> "A coffee in Berlin"</a></p> 
- <p class="six"><b><br>6.0  GOOD</b> —— <a href="index.html#grid-item-name-tile-menu">"The Menu"</a></p> 
+ <p class="nine"><b><br>9.0  EXCEPTIONAL</b> ——  <em><a href="index.html#grid-item-name-tile-frances">"Frances Ha"</a></em></p>
+ <p class="eight"><b><br>8.0  EXCELLENT</b> <em>——— <a href="index.html#grid-item-trailer-worst"> "The Worst Person in the World"</a>——  <a href="index.html#grid-item-name-tile-Tar"> Tár</a></em> </p>  
+ <p class="seven"><b><br>7.0  GREAT </b>———— <em><a href="index.html#grid-item-name-tile-coffee"> "A coffee in Berlin"</a></em></p> 
+ <p class="six"><b><br>6.0  GOOD</b> —— <em> <a href="index.html#grid-item-name-tile-menu">"The Menu"</a></em></p> 
  <p class="five"><b><br>5.0  MEDIOCRE</b></p>
  <p class="four"><b><br>4.0  BELOW AVERAGE</b></p>
  <p class="three"><b><br>3.0  BAD </b></p>
@@ -112,7 +133,6 @@ body {
 </div>
 
 
-    </div>
 
 
     <div id="cookie-popup">
@@ -126,9 +146,11 @@ body {
              </figure>
           <button id="accept-cookies">Accept Youtube Cookies</button>  <button id="reject-cookies"> Reject Cookies & use privacy front-end</button>
         </div>      
- 
-        <a href="#" id="return-to-top">Return to Top</a>
+    </div>     
+</div>     
 
+        <a href="#" id="return-to-top">Return to Top</a>
+     
 <script src="Script.js"></script>
 
 </body>
